@@ -14,18 +14,24 @@ header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 5px;
+    position: fixed;
 }
 
 header nav a{
     text-decoration: none;
-    color: #AAA;
+    color: #fff;
     margin-right: 10px;
+    font-size: 13px;
+
 }
 
 header nav a:hover{
-    color: #fff;
+    color: #AAA;
+}
+
+.container img{
+    height: 40px;
+    margin: 25px;
 }
 
 
@@ -33,9 +39,9 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-principal.png');
+    background: linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,.50)100%), url('../img/capa-principal.png');
 
-    height: 400px;
+    height: 95vh;
     background-size: cover;
 
     display: flex;
@@ -46,7 +52,7 @@ header nav a:hover{
 }
 
 .filme-principal .descricao{
-    margin-bottom: 90px;
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 
@@ -89,4 +95,7 @@ header nav a:hover{
     height: 100%;
     width: 100%;
     display: block;
+}
+.carousel-filmes{
+    margin-top: 20px;
 }
